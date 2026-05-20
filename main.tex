@@ -5,7 +5,13 @@
 \begin{document}
 Compiled: \DTMnow
 \clearpage
-\includepdf[pages=-]{Example_Good/Example_Good_report.pdf}
-\includepdf[pages=-]{Ivan_Ivanov/Ivan_Ivanov_report.pdf}
-\includepdf[pages=-]{Pavel_Sapegin/Pavel_Sapegin_report.pdf}
+\includepdf[pages=-,
+    addtotoc={1, section, 1, {ФИО, Тема}, example_good}]
+{Example_Good/Example_Good_report.pdf}
+\includepdf[pages=-,
+    addtotoc={1, section, 1, {Иванов Иван Иванович, Убер-тема}, ivanov_ivan}]
+{Ivan_Ivanov/Ivan_Ivanov_report.pdf}
+\includepdf[pages=-,
+    addtotoc={1, section, 1, {Сапегин Pavel, Свертка изображений}, sapegin_pavel}]
+{Pavel_Sapegin/Pavel_Sapegin_report.pdf}
 \end{document}
